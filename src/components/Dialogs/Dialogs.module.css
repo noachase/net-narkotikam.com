@@ -1,0 +1,54 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.ava {
+    width: 30%;
+    padding-right: 10px;
+}
+
+.dialogs_items {
+    padding-left: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.dialog_name {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: wheat;
+    cursor: pointer;
+}
+
+.dialogs_items .active {
+    color: gold;
+}
+
+.dialog {
+    padding: 10px;
+}
+
+.messages {
+    padding: 20px;
+}
+
+.message {
+    padding: 40px;
+    color: grey;
+}
+
+.btnContainer{
+
+}
+
+.btnSend {
+    display: block;
+    /* transform: translate(100%, 0); */
+    border: none;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 10%;
+}

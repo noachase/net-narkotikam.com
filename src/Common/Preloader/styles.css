@@ -1,0 +1,10 @@
+.preloader {
+    display: flex; 
+    justify-content: flex-end;
+}
+.preloaderImg {
+    position: absolute;
+}
+/* img {
+    position: absolute;
+} */

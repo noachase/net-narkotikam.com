@@ -1,0 +1,48 @@
+.userPhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+div {
+    color: wheat
+}
+.btnFollow {
+    background-color: rgba(0, 0, 255, 0.527);
+    color: white;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.btnUnfollow {
+    display: block;
+    border: none;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.userWrapper{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 10px 10px;
+}
+.userInfo{
+    padding-left: 20px;
+    /* margin: 0 auto; */
+}
+.userName{
+    color: #fdc865;
+    font-weight: bold;
+}
+.selectedPage{
+    color: #fdc865;
+    font-weight: bold;
+    cursor: pointer;
+}
+.currentPage {
+    cursor: pointer;
+}

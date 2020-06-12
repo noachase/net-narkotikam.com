@@ -1,0 +1,17 @@
+.logoMain{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 20px;
+}
+
+.logoMain>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.4em;
+    padding-top: 50%;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow:  2px 4px 2px #000000;
+    vertical-align: middle;
+}
