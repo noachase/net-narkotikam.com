@@ -1,24 +1,12 @@
 import React from 'react';
-import ProfileInfo from './ProfileInfo/ProfileInfo';
-import MyPostsContainer from './MyPosts/MyPostsContainer';
-
-// class Profile extends React.Component {
-// 	render(){
-// 		return (
-// 			<div>
-// 				<ProfileInfo profile={this.props.profile} />
-// 				<MyPostsContainer />
-// 			</div>
-// 		)
-// 	}
-// }
+import SlideView from '../../Common/SlideView/SlideView';
 
 const Profile = (props) => {
 	return (
 		<div>
-			<ProfileInfo profile={props.profile} />
-
-			<MyPostsContainer />
+			{/* <ProfileInfo profile={props.profile} /> */}
+			<SlideView/>
+			{/* <MyPostsContainer /> */}
 		</div>
 	)
 }
