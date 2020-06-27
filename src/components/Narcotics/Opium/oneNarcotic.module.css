@@ -1,0 +1,35 @@
+.opium {
+    color: rgb(136, 126, 126);
+}
+
+.opium_headPicture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.opium_headPicture img {
+    max-width: 900px;
+    width: 100%;
+}
+
+.opium_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+}
+.opium_wrapper h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.opium__text,
+.opium__textBlock {
+    text-align: justify;
+    padding: 5px 20px 5px;
+    margin: 0;
+    font-size: 20px;
+}

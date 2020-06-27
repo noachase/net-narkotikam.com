@@ -11,9 +11,13 @@ import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import styled from "styled-components";
 import Toggle from "./Common/Preloader/Toggle/Toggle";
+import Opium from "./components/Narcotics/Opium/OneNarcotic";
+import NarcotisContainer from "./components/Narcotics/NarcoticasContainer";
+import store from "./redux/state";
 
 
 const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className={classes.app_wrapper}>
@@ -30,15 +34,15 @@ const App = (props) => {
         )}/>
 
         <div className={classes.app_wrapper_content}>
-          {/* <Route path="/dialogs" render={() => <DialogsContainer />} />
-          <Route path="/profile" render={() => <ProfileContainer />} />
-          <Route path="/users" render={() => <UsersContainer />} /> */}
           <Route path="/dialogs" render={() => 'hello'} />
           <Route path="/profile" render={() => <ProfileContainer />} />
           <Route path="/users" render={() => <UsersContainer />} />
-          <Route path="/news" component={News} />
-          <Route path="/music" component={Music} />
-          <Route path="/settings" component={Settings} />
+
+          <Route path="/narcotics" render={() => <NarcotisContainer {...store}/>} />
+
+          {/* <Route path="/narcotics/opium" render={() => <Opium state={state.opium} />} /> */}
+          {/* <Route path="/narcotics/amfetamin" render={() => <Opium />} />
+          <Route path="/narcotics/kofein" render={() => <Opium />}/> */}
         </div>
       </div>
     </BrowserRouter>

@@ -9,22 +9,27 @@ import Preloader from '../../Common/Preloader/Preloader';
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        // this.props.toggleIsFetching(true);
-        const queryURL = `https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvsection=0&titles=egg&format=json`;
-        // const queryURL =  `https://en.wikipedia.org/w/api.php?action=parse&page=Pet_door&prop=text&formatversion=2`;
-        // const queryURL = `https://jsonplaceholder.typicode.com/todos/1`;
-        // fetch(queryURL)
-        // .then(res => res.json()).then(json => console.log(json))
-        axios
-            .get(
-                queryURL, {
-                withCredentials: true,
 
-            })
-            .then(response => {
-                console.log(response);
-            });
 
+        const instance = axios.create({
+            withCredentials: true,
+            baseURL: 'https://en.wikipedia.org/w/api.php?',
+            crossdomain: true,
+            credentials: 'same-origin',
+            mode: 'same-origin',
+            headers: {
+                'Access-Control-Allow-Headers' : '*',
+                'Content-Type': 'application/json'
+            }
+        })
+
+        const queryURL =  `https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvsection=0&titles=egg&format=json`;
+        function getWiki() {
+                return instance.get(`action=parse&page=Pet_door&prop=text&formatversion=2`)
+                .then(response => { console.log(response);})
+            }
+        
+        getWiki();
     }
 
     render() {
