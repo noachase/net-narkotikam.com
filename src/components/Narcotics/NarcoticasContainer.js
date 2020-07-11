@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import OneNarcotic from './Opium/OneNarcotic';
 import style from './narcoticsContainer.module.css'
-import { NavLink } from 'react-router-dom';
 
 export default class NarcotisContainer extends Component {
     

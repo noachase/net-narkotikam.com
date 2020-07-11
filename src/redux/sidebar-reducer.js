@@ -1,5 +1,3 @@
-const FRIEND_LIST = 'FRIEND_LIST';
-
 let initialState = {
     friends: [
         { name: 'Vladik', id: 1 },

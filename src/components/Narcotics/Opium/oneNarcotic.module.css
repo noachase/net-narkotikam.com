@@ -11,7 +11,9 @@
 }
 .opium_headPicture img {
     max-width: 900px;
-    width: 100%;
+    width: 50%;
+    padding-bottom: 15px;
+    padding-top: 5px;
 }
 
 .opium_wrapper {

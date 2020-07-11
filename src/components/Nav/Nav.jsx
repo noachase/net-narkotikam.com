@@ -15,25 +15,28 @@ class Nav extends React.Component {
                     <div>
                         {/* <button onClickCapture>k</button> */}
                         <div className={classes.item}>
-                            <a onClick={Toggle} href="#" className={classes.active}>Наркотики</a>
+                            <a onClick={Toggle} href="#" className={classes.active}>Усі наркотики</a>
                         </div>
                         {
                             on &&
                             <div>
                                 <div className={classes.item}>
-                                    <NavLink to="/narcotics" activeClassName={classes.active}>Опиум</NavLink>
+                                    <NavLink to="/narcotics/opium" activeClassName={classes.active}>Опиум</NavLink>
                                 </div>
                                 <div className={classes.item}>
-                                    <NavLink onClick={this.props.isOpium} to="/narcotics" activeClassName={classes.active}>Амфетамин</NavLink>
+                                    <NavLink to="/narcotics/durman" activeClassName={classes.active}>Дурман</NavLink>
+                                </div>
+                                <div className={classes.item}>
+                                    <NavLink onClick={this.props.isOpium} to="/narcotics" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
                                 <div className={classes.item}>
                                     <NavLink to="/narcotics" activeClassName={classes.active}>Кофеин</NavLink>
                                 </div>
                             </div>
                         }
-
                     </div>
-                )} />
+                )}
+                />
                 <br />
 
                 <div className={classes.item}>
