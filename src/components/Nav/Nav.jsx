@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import classes from './Nav.module.css';
 import { NavLink } from 'react-router-dom';
-import FriendsContainer from './Friends/FriendsContainer';
 import Toggle from '../../Common/Preloader/Toggle/Toggle';
 
 class Nav extends React.Component {
@@ -20,16 +20,16 @@ class Nav extends React.Component {
                         {
                             on &&
                             <div>
-                                <div className={classes.item}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink to="/narcotics/opium" activeClassName={classes.active}>Опиум</NavLink>
                                 </div>
-                                <div className={classes.item}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink to="/narcotics/durman" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
-                                <div className={classes.item}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink onClick={this.props.isOpium} to="/narcotics" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
-                                <div className={classes.item}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink to="/narcotics" activeClassName={classes.active}>Кофеин</NavLink>
                                 </div>
                             </div>

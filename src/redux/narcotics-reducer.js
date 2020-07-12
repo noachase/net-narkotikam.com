@@ -1,4 +1,11 @@
 const SET_NARCOTIC = "SET_NARCOTIC";
+// const IS_OPIUM = "IS_OPIUM";
+// const IS_DURMAN = "IS_DURMAN";
+// const IS_BARBITURATI = "IS_BARBITURATI";
+// const IS_KONOPLI = "IS_KONOPLI";
+// const IS_ALCOHOL = "IS_ALCOHOL";
+// const IS_LSD = "IS_LSD";
+// const IS_COCAINE = "IS_COCAINE";
 
 const initialState = {
     narcotics: [
@@ -8,12 +15,11 @@ const initialState = {
 };
 
 const narcoticsReducer = (state = initialState, action) => {
-    debugger
     switch (action.type) {
         case SET_NARCOTIC: {
             switch (action.id) {
                 case "Opium": {
-                    return { ...state, narcotics.visibility: action.id };
+                    return { ...state, narcotics[0] visibility = action.id };
                 }
                 default:
                     return state;
