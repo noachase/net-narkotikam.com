@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Nav.module.css';
 import { NavLink } from 'react-router-dom';
-import FriendsContainer from './Friends/FriendsContainer';
 import Toggle from '../../Common/Preloader/Toggle/Toggle';
 
 class Nav extends React.Component {
@@ -15,21 +14,21 @@ class Nav extends React.Component {
                     <div>
                         {/* <button onClickCapture>k</button> */}
                         <div className={classes.item}>
-                            <a onClick={Toggle} href="#" className={classes.active}>Усі наркотики</a>
+                            <a onClick={Toggle} href="/#" className={classes.active}>Усі наркотики</a>
                         </div>
                         {
                             on &&
                             <div>
-                                <div className={classes.item}>
+                                <div className={classes.itemNarko}>
                                     <NavLink to="/narcotics/opium" activeClassName={classes.active}>Опиум</NavLink>
                                 </div>
-                                <div className={classes.item}>
+                                <div className={classes.itemNarko}>
                                     <NavLink to="/narcotics/durman" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
-                                <div className={classes.item}>
+                                <div className={classes.itemNarko}>
                                     <NavLink onClick={this.props.isOpium} to="/narcotics" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
-                                <div className={classes.item}>
+                                <div className={classes.itemNarko}>
                                     <NavLink to="/narcotics" activeClassName={classes.active}>Кофеин</NavLink>
                                 </div>
                             </div>

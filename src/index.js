@@ -8,6 +8,7 @@ import store from './redux/redux-store';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import * as theme from './config/theme';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 
 

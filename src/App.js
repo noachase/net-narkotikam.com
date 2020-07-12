@@ -7,7 +7,6 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 // import styled from "styled-components";
 import Toggle from "./Common/Preloader/Toggle/Toggle";
-import Opium from "./components/Narcotics/Opium/OneNarcotic";
 import NarcotisContainer from "./components/Narcotics/NarcoticasContainer";
 import store from "./redux/state";
 

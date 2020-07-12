@@ -18,3 +18,16 @@
 .item a.active {
     color: tomato;
 }
+
+.itemNarko{
+    padding-left: 20px;
+}
+.itemNarko a {
+    color: wheat;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: 500;
+}
+.itemNarko a ::hover {
+    color: red;
+}
