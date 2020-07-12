@@ -21,9 +21,10 @@
 
 .itemNarko{
     padding-left: 20px;
-    text-transform: capitalize;
 }
 .itemNarko>a {
+    text-transform: capitalize;
+    text-decoration: none;
     color: wheat;
     font-size: 1.1em;
     font-weight: 500;
