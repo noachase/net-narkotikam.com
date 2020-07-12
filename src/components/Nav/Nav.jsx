@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import classes from './Nav.module.css';
 import { NavLink } from 'react-router-dom';
@@ -14,21 +15,21 @@ class Nav extends React.Component {
                     <div>
                         {/* <button onClickCapture>k</button> */}
                         <div className={classes.item}>
-                            <a onClick={Toggle} href="/#" className={classes.active}>Усі наркотики</a>
+                            <a onClick={Toggle} href="#" className={classes.active}>Усі наркотики</a>
                         </div>
                         {
                             on &&
                             <div>
-                                <div className={classes.itemNarko}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink to="/narcotics/opium" activeClassName={classes.active}>Опиум</NavLink>
                                 </div>
-                                <div className={classes.itemNarko}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink to="/narcotics/durman" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
-                                <div className={classes.itemNarko}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink onClick={this.props.isOpium} to="/narcotics" activeClassName={classes.active}>Дурман</NavLink>
                                 </div>
-                                <div className={classes.itemNarko}>
+                                <div className={`${classes.itemNarko} ${classes.active}`}>
                                     <NavLink to="/narcotics" activeClassName={classes.active}>Кофеин</NavLink>
                                 </div>
                             </div>

@@ -21,13 +21,14 @@
 
 .itemNarko{
     padding-left: 20px;
-}
-.itemNarko a {
-    color: wheat;
     text-transform: capitalize;
-    font-size: 1em;
-    font-weight: 500;
 }
-.itemNarko a ::hover {
-    color: red;
+.itemNarko>a {
+    color: wheat;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: 0.5ms;
+}
+.itemNarko>a:hover {
+    color: tomato;
 }
